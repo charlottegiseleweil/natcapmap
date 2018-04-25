@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv='Content-Type'>
+		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+		
+		<!-- Map -->
+		<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+		<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+
+		<!-- Icons -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css"/>
+	  	<link rel="stylesheet" href="css/sliders.css"/>
+
+	  	<!--CartoDB
+  		<link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+  		<script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.uncompressed.js"></script>
+		-->
+
+
+	</head>
+
+
+	<body>	
+
+		<div id='map'></div>
+		<div id="column" class="column">
+
+			<h3> NatCap Projects </h3>
+			<p>
+				<img class = "icon" src="img/leaf.png">	Sustainable development planning
+				<label class="small switch"><input type="checkbox" id='Sustainable'><span class="slider"></span></label>	
+
+
+			</p>
+			<p>
+				<img class = "icon" src="img/city.png">	Livable cities	
+				<label class="switch"><input type="checkbox" id='Cities'><span class="slider"></span></label>
+
+
+			</p>
+			<p>
+				<img class = "icon" src="img/water.png"> Secure freshwater
+				<label class="switch"><input type="checkbox" id='Freshwater'><span class="slider"></span></label>	
+
+
+			</p>
+			<p>
+				<img class = "icon" src="img/coastal.png"> Safe, resilient coastal communities	
+
+				<label class="switch"><input type="checkbox" id='Coastal'><span class="slider"></span></label>
+
+			</p>
+			<p>
+				<img class = "icon" src="img/private.png"> Standards for the private sector	
+				<label class="switch"><input type="checkbox" id='Private'><span class="slider"></span></label>
+
+			</p>
+
+		 </div>
+
+		<!-- jQuery -->
+		<script src="js/lib/jquery-2.1.1.min.js"></script>
+
+		<script src='js/main.js'></script>
+	</body>
+</html>

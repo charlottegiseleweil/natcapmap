@@ -1,0 +1,28 @@
+#map{ 
+  width: 1000px; 
+  height: 600px; 
+  display: inline-block;
+  margin:20px;
+  position:absolute;
+  top:0;
+  bottom:0;
+}
+
+.column {
+    float:right;
+    width: 20%;
+    display: inline-block;
+    margin:20px;
+}
+
+body {
+	margin:0;
+	padding:0;
+}
+
+.icon { 
+    width: 30px; 
+    height:30px;
+    margin: 0px 10px 0px 0px;
+
+}
