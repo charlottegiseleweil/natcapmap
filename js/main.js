@@ -27,11 +27,16 @@ var CartoDark = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{
 		  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
 		});
 
+var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+	maxZoom: 16
+});
+
 // set base map and controls
 var map = new L.Map('map', {
   zoomControl: true,
   layer_selector: true,
-  layers: [Stamen_TonerLite],
+  layers: [Esri_WorldGrayCanvas],
   center: [25, 8],
   zoom: 2,
   minZoom: 1,

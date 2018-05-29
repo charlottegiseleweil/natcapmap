@@ -1,11 +1,7 @@
-#map{ 
-  width: 1000px; 
-  height: 600px; 
-  display: inline-block;
-  margin:20px;
-  position:absolute;
-  top:0;
-  bottom:0;
+html, body, #map {
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .column {
@@ -15,14 +11,25 @@
     margin:20px;
 }
 
-body {
-	margin:0;
-	padding:0;
-}
 
 .icon { 
     width: 30px; 
     height:30px;
     margin: 0px 10px 0px 0px;
 
+}
+
+.panel-right-bottom{
+     border-radius: 5px;
+     position: absolute;
+     bottom: 35px;
+     right: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+     border:1px solid #000;
+     background-color: #D4D4D4;
+     color: #000;
+     min-width: 50px;
+     max-height: 400px;
+     z-index: 500;
 }

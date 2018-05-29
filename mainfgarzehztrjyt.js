@@ -9,11 +9,16 @@ var ESRIOcean = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, GEBCO, NOAA, and DeLorme'
 });
 
+var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+	maxZoom: 16
+});
+
 // set base map and controls
 var map = new L.Map('map', {
   zoomControl: true,
   layer_selector: true,
-  layers: [ESRIOcean],
+  layers: [Esri_WorldGrayCanvas],
   center: [25, 8],
   zoom: 2,
   minZoom: 1,
@@ -42,7 +47,7 @@ var baseMaps = {
 };
 
 
-L.control.layers(baseMaps, greenIcon, {collapsed: false}).addTo(map);	
+//L.control.layers(baseMaps, greenIcon, {collapsed: false}).addTo(map);	
 	
 
 // extend the default marker class
